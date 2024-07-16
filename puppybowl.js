@@ -56,7 +56,7 @@ const renderPlayerCard = (player) => {
     <li><strong>Status:</strong> ${player.status ? player.status + ' ' : 'Unknown'}</li>
   </ul>
 `;
-  // Add a class for styling (assuming the styles are defined in your CSS)
+  // Add a class for styling 
   playerCard.classList.add("player-card");  // Add the class "player-card" for styling
 
   // Add an event listener to the player card for clicking, which will trigger showing details for that player
@@ -83,13 +83,13 @@ const showPlayerDetails = async (playerId) => {
       // Extract the player data object from the response
       const player = data.data;
 
-      // Render the player details on the page using a separate function (implementation not provided here)
+      // Render the player details on the page using a separate function 
       renderPlayerDetails(player);
 
       // Hide the roster container
       document.getElementById("roster").style.display = "none";
 
-      // Show the player details container (assuming it has an ID like "player-details")
+      // Show the player details container 
       document.getElementById("player-details").style.display = "block";
     } else {
       // Log an error message if the API call failed, including the error details
