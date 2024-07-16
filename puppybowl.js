@@ -100,8 +100,4 @@ const showPlayerDetails = async (playerId) => {
     console.error("Error fetching player details:", error);
   }
 };
-
-// (Assuming you have a function called renderPlayerDetails to display detailed player information)
-
-// Add event listener to the button to trigger roster fetching on click
 rosterButton.addEventListener("click", getRoster);
