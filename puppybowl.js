@@ -4,7 +4,7 @@ const baseUrl = "https://fsa-puppy-bowl.herokuapp.com/api/2406-FTB-ET-WEB-FT/pla
 // Get a reference to the button element with the ID "view-roster-btn"
 const rosterButton = document.getElementById("view-roster-btn");
 
-// Asynchronous function to fetch the puppy roster data
+// Async function to fetch the puppy roster data
 const getRoster = async () => {
   try {
     // Fetch data from the API endpoint
